@@ -4,3 +4,98 @@
     border: 0;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#box {
+    position: absolute;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 2em;
+    height: 100vh;
+    z-index: 2;
+    padding-left: 100px;
+}
+
+#box-2 {
+    z-index: 1;
+    text-align: center;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 2em;
+    height: 100vh;
+    padding-left: 100px;
+}
+
+button {
+    font-size: 5em;
+    width: 500px;
+    margin: 120px;
+}
+
+.box-removal {
+    opacity: 0 !important;
+    z-index: 0 !important;
+}
+
+#blue {
+    background-color: royalblue;
+}
+
+#red {
+    background-color: firebrick;
+
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: forestgreen;
+}
+
+#one {
+    color: royalblue;
+}
+
+#two {
+    color: firebrick;
+}
+
+#three {
+    color: gold
+}
+
+#four {
+    color: forestgreen;
+}
+
+.flash {
+    background-color: royalblue;
+    opacity: 1 !important;
+    transition: all 1s;
+}
+
+.flash2 {
+    background-color: firebrick;
+    opacity: 1 !important;
+    transition: all 1s;
+}
+
+.flash3 {
+    background-color: yellow;
+    opacity: 1 !important;
+    transition: all 1s;
+}
+
+.flash4 {
+    background-color: forestgreen;
+    opacity: 1 !important;
+    transition: all 1s;
+}
