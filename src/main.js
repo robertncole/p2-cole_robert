@@ -2,6 +2,7 @@ var fortunes = ['You will graduate from University of Florida', 'You will buy a 
 
 const button = document.getElementsByTagName('button');
 const yourFortune = document.querySelector('#box');
+const yourFortune2 = document.querySelector('#box-2');
 
 
 function wrapper () {
@@ -18,7 +19,11 @@ function wrapper () {
             setTimeout(function() {
                 changeColor();
             }, i * 500);
-        }  
+        } 
+        
+        setTimeout(function() {
+            yourFortune.classList.toggle('box-removal');
+        }, thisButtonLength * 1000);
     };
     
     loopThrough();
