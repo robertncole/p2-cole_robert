@@ -1,9 +1,10 @@
-var fortunes = ['You will graduate from University of Florida', 'You will buy a house soon', 'You will meet the love of your life soon', 'You will be alone forever'];
+var fortunes = ['You will graduate from University of Florida', 'You will buy a house soon', 'You will meet the love of your life soon', 'You will be alone forever', 'You will live a life of happiness and joy', 'You will get married in the next 5 years', 'You will have more than 2 kids', 'You have the best years ahead of you', 'Your current job will not be your forever job', 'Your will get a raise soon'];
 
 const button = document.getElementsByTagName('button');
 const yourFortune = document.querySelector('#box');
 const yourFortune2 = document.querySelector('#box-2');
 const yourFortune3 = document.querySelector('#box-3');
+const fortune = document.querySelector('#fortune-box p span');
 
 
 function wrapper () {
@@ -196,6 +197,20 @@ function wrapperFour () {
 
 };
 
+const getFortune = function () {
+    
+    yourFortune3.classList.toggle('box-removal');
+    
+    fortunes.sort(function (a, b) {return 0.5 - Math.random()});
+    
+    const fortuneText = document.createTextNode(fortunes[0]);
+    
+    fortune.appendChild(fortuneText);
+    
+    fortune.classList.add('fortune-show'); 
+    
+}
+
 for(let i=0; i < button.length; i++) {
     button[0].addEventListener('click', wrapper);
     button[1].addEventListener('click', wrapper2);
@@ -205,4 +220,9 @@ for(let i=0; i < button.length; i++) {
     button[5].addEventListener('click', wrapperTwo);
     button[6].addEventListener('click', wrapperThree);
     button[7].addEventListener('click', wrapperFour);
+    button[8].addEventListener('click', getFortune);
+    button[9].addEventListener('click', getFortune);
+    button[10].addEventListener('click', getFortune);
+    button[11].addEventListener('click', getFortune);
+    
 }
