@@ -144,3 +144,11 @@ button {
     opacity: 1 !important;
     transition: all 1s;
 }
+
+@media (max-width: 1500px) {
+    button {
+        font-size: 2em;
+        width: 40%;
+        margin-top: 200px;
+    }
+}
