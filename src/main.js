@@ -106,7 +106,7 @@ function wrapperTwo () {
 function wrapper3 () {
     
     const changeColor = () => {
-        yourFortune.classList.toggle('flash2');
+        yourFortune.classList.toggle('flash3');
     }
     
     const loopThrough = () => {
