@@ -1,14 +1,22 @@
 {
-  "name": "p2_start",
+  "name": "p2-cole_robert",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d lib"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertncole/p2-cole_robert.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertncole/p2-cole_robert/issues"
+  },
+  "homepage": "https://github.com/robertncole/p2-cole_robert#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0"

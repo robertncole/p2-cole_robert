@@ -25,10 +25,6 @@ function wrapper () {
     
 };
 
-function remove () {
-    yourFortune.classList.toggle('box-removal');
-}
-
 function wrapperTwo () {
     
     const changeColor2 = () => {
